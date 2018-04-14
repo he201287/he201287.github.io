@@ -3,8 +3,6 @@ function defaultValue() {
     document.querySelector("a[href*=\"index\"]").focus();
     var logo = document.querySelector('#logo');
     logo.dataset.url = "formLogo.html";
-    //logo.setAttribute('onclick','newAjaxJSON(this)');
-    //logo.title = "Changement du logo";
 }
 function onMouseOver(id) {
     document.getElementById(id).style.display="block";

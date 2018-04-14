@@ -1,81 +1,91 @@
-/* ==============================================
-   FEUILLE DE STYLES DES GABARITS HTML/CSS --- 04
-   © Elephorm & Alsacreations.com
-   Conditions d'utilisation:
-   http://creativecommons.org/licenses/by/2.0/fr/
-   ============================================== */
-
-
-/* --- COULEURS --- */
-
-/* Note: vous pouvez modifier simplement l'aspect de ce gabarit en modifiant
-   uniquement les couleurs de fond (propriétés background) et les couleurs
-   du texte (propriété color).
-   Pour modifier la disposition des blocs, voir plus bas dans la feuille de
-   styles la partie «positionnement». */
-
-/* Général */
 body {
-    color: #F0E39E;
-    background: #2C2F22;
-}
-a {
-    color: #FF6533;
-}
-a:hover, a:focus {
-    color: #FF4C00;
-}
-strong {
-    color: #A1B55D;
-}
-
-
-
-/* Contenu principal */
-#contenu {
-    color: #363B29;
-    background: #cbd888;
-}
-#contenu a {
-    color: #332510;
-}
-#contenu a:hover, #contenu a:focus {
-    color: #6E5122;
-}
-#contenu strong {
-    color: #181A12;
-}
-
-
-/* --- POSITIONNEMENT --- */
-
-/* Page */
-body {
-    padding: 20px 50px; /* Voir -> Note 1 ci-dessous */
-}
-
-/* En-tête */
-#entete {
-    padding: 20px 0;
-}
-#entete h1 {
     margin: 0;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: .8em;
+    line-height: 1.25;
+    color: black;
+    background: white;
 }
-#entete h1 img {
+
+/* Header */
+#indexHeader {
+    padding: 20px 0;
+    width: auto;
+    color: #fff;
+    text-align: center;
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
+}
+
+#indexHeader h1 img {
     float: left;
     margin: 7px 20px 10px 0;
 }
-#entete .sous-titre {
-    margin: 4px 0 15px 0;
+
+h1 {
+    margin: 1em 0 .5em 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+
+#menu {
+    margin:0% 0% 5% 5%;
+}
+.menu a {
+    padding: 5%;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.5s, background-color 0.5s, border-color 0.5s;
+}
+
+.menu a:hover{
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu a {
+    height: 5%;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.lobby{
+    float: left;
+}
+/* principal content */
+#content {
+    color: #363B29;
+    background: #fff;
+    border: 5px solid #159957;
+    border-radius: 0.75em;
+    margin: 5%
 }
 
 /* Sous-Menu */
 #sous-menu {
+    color: #fff;
+    text-align: left;
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
+}
+
+#sous-menu {
     width: 18%;
-    float: left; /* -> 2 */
+    float: left; 
 }
 #sous-menu ul {
-    margin: 0;
     padding: 20px 10px;
     list-style: none;
 }
@@ -83,16 +93,16 @@ body {
     display: block;
 }
 
-/* Contenu */
-#contenu {
-    margin-left: 20%; /* -> 4 */
+/* content */
+#content {
+    margin-left: 20%;
     margin-bottom: 20px;
     padding: 10px 20px;
 }
-#contenu > :first-child {
+#content > :first-child {
     margin-top: 10px;
 }
-#contenu p, #contenu li {
+#content p, #content li {
     line-height: 1.5;
 }
 
@@ -101,99 +111,20 @@ body {
     margin-left: 20%;
 }
 
-
-/* --- NOTES ---
-
-1.	Ce gabarit utilise du padding sur l'élément BODY pour créer un retrait
-	esthétique tout autour du conteneur principal.
-	Rappel: "padding: 20px 50px;" se lit ainsi:
-	- padding-top et padding-bottom de 20px;
-	- padding-left et padding-right de 50px.
-
-2.	C'est la propriété "float" qui nous permet de placer deux blocs
-	côte-à-côte. Notez bien que l'élément flottant (ici, notre menu de
-	navigation) doit être placé en premier dans le code HTML. Il est
-	préférable de lui donner une largeur, ce que nous faisons ici avec un
-	"width: 18%;".
-
-3.	Correction d'un bug d'Internet Explorer 6. Voir la dernière partie de
-	http://blog.alsacreations.com/2006/10/20/294-impact-sur-le-rendu-de-la-
-	mise-en-forme-du-code-html
-	Dans l'idéal, on placera ce correctif dans une feuille séparée, appelée
-	via un commentaire conditionnel visant IE6.
-
-4.	Les éléments flottants ne repoussent pas les blocs, mais repoussent
-	uniquement leur contenu. Pour que notre bloc de contenu principal forme
-	une colonne distincte du menu, on lui donne donc une marge à gauche de 20%.
-	Il existe une autre technique pour adapter la largeur d'un bloc aux
-	flottants qui le précèdent. On pourra lire l'article suivant:
-		http://css.alsacreations.com/Faire-une-mise-en-page-sans-tableaux/
-		design-trois-colonnes-positionnement-flottant
-
-*/
-
-/* Navigation(tag) */
-#menu{
-    width : auto;
-    padding: 10px 5px;
+#copyright {
+    margin: 20px 0 5px 0;
+    text-align: right;
+    font-size: .8em;
+    color: #848F63;
 }
-.menu {
-    background: #181A12;
-    color: #FF6533;
-}
-.menu a {
-    border: solid #181A12 0.2em;
-    height: 1%; /* -> 3 */
-    padding: 0.5em 1em;
-    line-height: 1.5;
-    font-size: .9em;
+#copyright a {
+    color: #848F63;
     text-decoration: none;
 }
-.menu a:hover, .menu a:focus {
-    background-color: darkslategray;
-    border-radius: 0.75em;
-    border-color: #404040;
-}
-.menu a:focus {
-    border-radius: 0em 0.75em 0em 0.75em;
-    border-color: #808080;
+#copyright a:hover, #copyright a:focus {
+    text-decoration: underline;
 }
 
-/*#tb th {
-    background:#BAC96E;
-    text-align: left;
-}
-#tb, #tb th, #tb td {
-    padding: 0.5em;
-    vertical-align: middle;
-}*/
-th{
-    background-color: #848F63;
-}
-#clr tr:nth-child(odd){
-    background-color: darkkhaki;
-}
-#clr tr:nth-child(even){
-    background-color: #cbd888;
-}
-thead{
-    background-color: #848F63;
-}
-table{
-    border-collapse: collapse;
-}
-table,th, td{
-    border:1px dotted darkgray;
-}
-th{
-    font-weight: bold;
-}
-#noSug {
-    display:none;
-}
-/*#auteur:hover {
-    <?php echo $__INFOS__[matricule]; ?>@students.ephec.be
-}*/
 #credit {
     width : auto;
     padding: 7px 5px;
