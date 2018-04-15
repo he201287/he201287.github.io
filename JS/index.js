@@ -7,13 +7,15 @@ function onMouseOut(id) {
 
 $( document ).ready(function() {
 
-    $("#cv").click(function() {
-        $("#content").hide();
-        $(".cv").slideToggle("slow");
+    $("#helpDesk").click(function() {
+        $("#helpDesk div").slideToggle(500);
     });
 
-    $("#a1").click(function() {
-        $("#content").hide();
-        $(".a1").slideToggle("slow");
+    $("#devDay").click(function() {
+        $("#devDay div").slideToggle(500);
+    });
+
+    $("#cSharp").click(function() {
+        $("#cSharp div").slideToggle(500);
     });
 });

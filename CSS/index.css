@@ -7,13 +7,54 @@ body {
     background: white;
 }
 
-#indexHeader {
+#indexHeader, footer {
     padding: 20px 0;
     width: auto;
     color: #fff;
     text-align: center;
-    background-color: #159957;
-    background-image: linear-gradient(120deg, #155799, #159957);
+    background-color: #383838;
+    background-image: linear-gradient(120deg, #959595, #383838 );
+}
+/*#155799, #159957*/
+#indexHeader {
+    height: 19%;  
+    width: 100%; 
+    top: -50px; 
+    z-index: 100; 
+    position: fixed; 
+    border-bottom: 1.75em solid #C5283D; 
+}
+
+#content {
+    margin-top: 15%;
+}
+
+#content > div:first-child{
+    margin: 0 0 1% 0 ;
+    background-color: #959595;
+}
+
+#helpDesk {
+    background-color: #FFC857;
+    margin: 1% 0 1% 0;
+    padding: 1%;
+}
+
+#devDay {
+    background-color: #E9724C;
+    margin: 1% 0 1% 0;
+    padding: 1%;
+}
+
+#cSharp {
+    background-color: #C5283D;
+    margin: 1% 0 1% 0;
+    padding: 1%;
+}
+
+section div {
+    display:none;
+    padding: 1%;
 }
 
 h1 {
@@ -27,9 +68,6 @@ h1 {
     font-style: italic;
 }
 
-#menu {
-    margin:0% 0% 5% 5%;
-}
 a {
     padding: 1%;
     display: inline-block;
@@ -56,10 +94,13 @@ a {
     text-decoration: none;
 }
 
+/*Resume CSS*/
 #resumeContent {
     border: 1px solid black;
     margin: 1%;
+    margin-top: 15%;
 }
+
 .coor > li:first-child {
     font-weight: bold !important;
     font-size: 1.25em;
