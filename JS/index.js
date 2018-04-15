@@ -1,21 +1,19 @@
-var data={};
-function defaultValue() {
-    document.querySelector("a[href*=\"index\"]").focus();
-    var logo = document.querySelector('#logo');
-    logo.dataset.url = "formLogo.html";
-}
 function onMouseOver(id) {
-    document.getElementById(id).style.display="block";
+    $("#" + id).show();
 }
 function onMouseOut(id) {
-    document.getElementById(id).style.display="none";
+    $("#" + id).hide();
 }
 
-function getElem(id){
-    return document.getElementById(id);
-}
+$( document ).ready(function() {
 
-function setElem(id, v){
-    // place la valeur v dans l'élément id
-    document.getElementById(id).innerHTML = v;
-}
+    $("#cv").click(function() {
+        $("#content").hide();
+        $(".cv").slideToggle("slow");
+    });
+
+    $("#a1").click(function() {
+        $("#content").hide();
+        $(".a1").slideToggle("slow");
+    });
+});

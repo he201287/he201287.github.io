@@ -7,7 +7,6 @@ body {
     background: white;
 }
 
-/* Header */
 #indexHeader {
     padding: 20px 0;
     width: auto;
@@ -17,16 +16,12 @@ body {
     background-image: linear-gradient(120deg, #155799, #159957);
 }
 
-#indexHeader h1 img {
-    float: left;
-    margin: 7px 20px 10px 0;
-}
-
 h1 {
     margin: 1em 0 .5em 0;
     font-family: 'Times New Roman', Times, serif;
     font-weight: normal;
 }
+
 h1 {
     font-size: 3em;
     font-style: italic;
@@ -35,8 +30,8 @@ h1 {
 #menu {
     margin:0% 0% 5% 5%;
 }
-.menu a {
-    padding: 5%;
+a {
+    padding: 1%;
     display: inline-block;
     margin-bottom: 1rem;
     color: rgba(255, 255, 255, 0.7);
@@ -48,85 +43,24 @@ h1 {
     transition: color 0.5s, background-color 0.5s, border-color 0.5s;
 }
 
-.menu a:hover{
+a:hover {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
 }
 
-.menu a {
+a {
     height: 5%;
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
 }
 
-.lobby{
-    float: left;
+#resumeContent {
+    border: 1px solid black;
+    margin: 1%;
 }
-/* principal content */
-#content {
-    color: #363B29;
-    background: #fff;
-    border: 5px solid #159957;
-    border-radius: 0.75em;
-    margin: 5%
-}
-
-/* Sous-Menu */
-#sous-menu {
-    color: #fff;
-    text-align: left;
-    background-color: #159957;
-    background-image: linear-gradient(120deg, #155799, #159957);
-}
-
-#sous-menu {
-    width: 18%;
-    float: left; 
-}
-#sous-menu ul {
-    padding: 20px 10px;
-    list-style: none;
-}
-#sous-menu a {
-    display: block;
-}
-
-/* content */
-#content {
-    margin-left: 20%;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-}
-#content > :first-child {
-    margin-top: 10px;
-}
-#content p, #content li {
-    line-height: 1.5;
-}
-
-/* Mention de paternité */
-#copyright {
-    margin-left: 20%;
-}
-
-#copyright {
-    margin: 20px 0 5px 0;
-    text-align: right;
-    font-size: .8em;
-    color: #848F63;
-}
-#copyright a {
-    color: #848F63;
-    text-decoration: none;
-}
-#copyright a:hover, #copyright a:focus {
-    text-decoration: underline;
-}
-
-#credit {
-    width : auto;
-    padding: 7px 5px;
-    display: none;
+.coor > li:first-child {
+    font-weight: bold !important;
+    font-size: 1.25em;
 }
