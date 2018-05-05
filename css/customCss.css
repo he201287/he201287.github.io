@@ -1,0 +1,95 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+header {
+  padding: 154px 0 100px;
+}
+
+body {
+  font-family: 'Open Sans', serif;
+  padding-top: 54px;
+  color: #868e96;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+p {
+  text-align : justify;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 100px;
+  }
+  .actDate {
+    min-width: 18rem;
+  }
+}
+
+section {
+  padding: 150px 0;
+}
+
+.bg-primary {
+  background-color : #6A8691 !important;
+}
+
+.navbar {
+  background-color : #343a40 !important;
+}
+
+.actDate {
+  min-width: none;
+}
+
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 0.85rem;
+}
+
+.subheading a {
+  color: #fff !important;
+}
+
+.text-primary {
+  color: #6A8691 !important;
+}
+
+table{
+  text-align: center;
+}
+table a {
+  color:#6A8691 !important;
+}
+
+table a:hover {
+  text-decoration: underline !important;
+}
+
+th, tr, td {
+  border: 1px solid #6A8691;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.subtitle span {
+  color: #dee2e6;
+}
