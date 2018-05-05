@@ -55,7 +55,6 @@ section {
   min-width: none;
 }
 
-
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
@@ -69,6 +68,10 @@ section {
 
 .text-primary {
   color: #6A8691 !important;
+}
+
+.list-icons {
+  font-size: 3rem;
 }
 
 table{
