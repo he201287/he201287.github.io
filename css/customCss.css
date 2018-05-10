@@ -81,6 +81,10 @@ table a {
   color:#6A8691 !important;
 }
 
+#activies div a {
+  color:#6A8691 !important;
+}
+
 table a:hover {
   text-decoration: underline !important;
 }
