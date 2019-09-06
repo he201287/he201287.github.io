@@ -30,6 +30,14 @@ p {
   text-align : justify;
 }
 
+#countDown {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 42;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
 @media (min-width: 992px) {
   header {
     padding: 156px 0 100px;
