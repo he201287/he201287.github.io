@@ -19,6 +19,24 @@
   </head>
 
   <body id="page-top">
+    
+    <script>
+      let countDownDate = new Date("Oct 31, 2019 16:30:00").getTime();
+      let x = setInterval(function() {
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("#countDown .lead").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("#countDown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
 
     <!-- Navigation -->
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
@@ -257,27 +275,16 @@
         <div class="row">
           <div class="col-lg-11 mx-auto">
             <h2>Activités</h2>
-            <p class="lead">Ci-dessous, vous retrouverez les activités effectuées lors de mon cursus à l'Ephec.</p>
+            <p class="lead">The CountDown</p>
             
             <hr>
 
-            <div id="helpDesk" class="d-flex flex-column flex-md-row mb-5">
+            <div id="countDown" class="d-flex flex-column flex-md-row mb-5">
                 <div class="mr-auto">
                   <h3 class="mb-0">Employé Helpdesk aux Cliniques Universitaires Saint-Luc</h3>
                   <div class="subheading mb-3">h valorisées 10h | h réelles 1 mois temps plein</div>
-                  <p class="lead">
-                      Lors du mois d’août 2017, j’ai eu l’occasion de travailler aux Cliniques Universitaires Saint-Luc en tant qu’Employé Helpdesk.
-                      Cette expérience m’a permis de faire une première découverte de l’environnement en entreprise et du travail au sein du département Helpdesk de l’hospital.
-                      J’ai eu la chance de tomber au sein d’une chouette équipe. On m’a tout de suite encadré et expliquer mon rôle et mes fonctions.   
-                      <br><br>
-                      Mes tâches consistaient à aller régler les divers problèmes que pouvaient rencontrer les utilisateurs, hardware comme software, inventorié certains éléments et imager/réimager/formater des ordinateurs.
-                      Dans un premier temps j’accompagnais mon collègue pour l’aider dans ses tâches de dépannage. Au bout d’une semaine et demi, j’ai pu commencer à effectuer les tâches par moi-même.
-                      <br><br>
-                      Le seul point négatif aura été la monotonie de certaines tâches, telle qu’imager les pc. Appliquer la même procédure à une centaine de pc par semaine n’est pas vraiment agréable ni instructif.
-                      <br><br>
-                      Ce fut une expérience enrichissante dans l’ensemble tant au niveau social que technique.
-                      J’ai pu être au contact des utilisateurs tout au long du mois et voir la réalité du terrain, j’ai aussi pu apprendre de nouveaux logiciels (liés au monde des hôpitaux).
-                      Les personnes dans mon équipe étaient toutes ouvertes et disponibles pour les éventuelles questions et l’ambiance au sein de l’équipe était fantastique.                      
+                  <p class="lead"> 
+                                
                   </p>
                 </div>
 
