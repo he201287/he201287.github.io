@@ -83,7 +83,7 @@ section {
 }
 
 div pre {
-  text-align:center;
+  white-space: pre;
 }
 
 table{

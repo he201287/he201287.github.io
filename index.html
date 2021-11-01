@@ -21,7 +21,7 @@
   <body id="page-top">
     
     <script>
-      let countDownDate = new Date("Oct 31, 2019 16:30:00").getTime();
+      let countDownDate = new Date("Dec 15, 2021 17:00:00").getTime();
       let x = setInterval(function() {
         let now = new Date().getTime();
         let distance = countDownDate - now;
@@ -33,7 +33,7 @@
         + minutes + "m " + seconds + "s ";
         if (distance < 0) {
           clearInterval(x);
-          document.getElementById("countDown").innerHTML = "EXPIRED";
+          document.getElementById("countDown").innerHTML = "Congratulations, you are now a proud member of the Landlord Guild.\n You can add it to your existing title: Young dynamic executive at MasterCard";
         }
       }, 1000);
     </script>
