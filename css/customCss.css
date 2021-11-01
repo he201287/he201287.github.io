@@ -4,10 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
-header {
-  padding: 154px 0 100px;
-}
-
 body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
@@ -40,11 +36,14 @@ p {
 
 @media (min-width: 992px) {
   header {
-    padding: 156px 0 100px;
+    padding: 10%;
   }
   .actDate {
     min-width: 18rem;
   }
+}
+header h1 {
+  padding: 10%;
 }
 
 section {
@@ -84,6 +83,7 @@ section {
 
 div pre {
   white-space: pre;
+  overflow: hidden;
 }
 
 li pre {
@@ -116,3 +116,4 @@ th, tr, td {
 .subtitle span {
   color: #dee2e6;
 }
+
