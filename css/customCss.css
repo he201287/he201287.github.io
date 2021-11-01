@@ -86,6 +86,10 @@ div pre {
   white-space: pre;
 }
 
+li pre {
+  color: #DF2B04;
+}
+
 table{
   text-align: center;
 }
