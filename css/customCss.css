@@ -82,6 +82,10 @@ section {
   font-size: 3rem;
 }
 
+div pre {
+  text-align:center;
+}
+
 table{
   text-align: center;
 }
